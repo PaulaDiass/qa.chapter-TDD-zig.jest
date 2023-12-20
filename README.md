@@ -64,3 +64,18 @@ Projeto
 8. Cria a pasta tests
 9. Add no package.json o script com comando `jest`
 10. Add no package.json o script com comando `jest --watchAll`
+
+```typescript
+
+  /**
+   * Método para calcular a idade de uma pessoa com base na data de nascimento
+   * @param dataNascimento - Formato ISO 8601. Ex.: '1990-12-20'
+   * @returns - Idade em anos
+   */
+  public calcularIdade(dataNascimento: string): number {
+    const idadeEmMilissegundos =
+      Date.now() - new Date(dataNascimento).getTime();
+    const idadeEmAnos = new Date(idadeEmMilissegundos).getUTCFullYear() - 1970;
+    return idadeEmAnos;
+  }
+```
