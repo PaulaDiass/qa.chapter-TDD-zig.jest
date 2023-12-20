@@ -1,4 +1,4 @@
-# qa.chapter-TDD-zig.jest
+# qa.chapter-teste-de-unidade-TDD-e-BDD-zig.jest
 
 Chapter QA - Teste unitário
 
